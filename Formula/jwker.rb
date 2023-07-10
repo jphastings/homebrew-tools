@@ -9,17 +9,17 @@ class Jwker < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bd2055abeb137a6786df9755c2bfc3c64ea4d43f6bc24eec5269c0f2332bb201"
+    if Hardware::CPU.intel?
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a2d94127563fb7ee13ac2e4d738d73ef9a5bdd670207fa4e6bd34e18501621ce"
 
       def install
         bin.install "jwker"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bab8f44fc6324bc714c438d6b5bd07ace706b02f5fddefb753b85a29e97aaee1"
+    if Hardware::CPU.arm?
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a008336b19cea175193e3659f7db21d59e7a2b5568a0b781f194f0d03c92375e"
 
       def install
         bin.install "jwker"
@@ -28,17 +28,17 @@ class Jwker < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "0ac12198cca17b7de201defcb58cf8585116ed5d1f6d2a95497e43b01f0f3a36"
+    if Hardware::CPU.intel?
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f37866a81509a5021378035df31a767c60a49a71e91379aef1fed621bc3e024d"
 
       def install
         bin.install "jwker"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7482b82b001fe4de610ab838e9dd3cd1c7f45c9b53f316ef843a8517b0bded2d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "7482cf4c5f3be63c8cca5ec00a720cf0f5bdd0a34f607c558e68ebbebed82e95"
 
       def install
         bin.install "jwker"
@@ -47,11 +47,11 @@ class Jwker < Formula
   end
 
   resource("testdata.pem") do
-    url "https://github.com/jphastings/jwker/raw/main/test_data/x25519.pem"
+    url "https://raw.githubusercontent.com/jphastings/jwker/main/test_data/x25519.pem"
     sha256 "546a61cc1eb31e336be056bde9ed1ad417f09fde3beb551f24406b043b5ce69a"
   end
   resource("testdata.jwk") do
-    url "https://github.com/jphastings/jwker/raw/main/test_data/x25519.pem"
+    url "https://raw.githubusercontent.com/jphastings/jwker/main/test_data/x25519.jwk"
     sha256 "f8d83d7dc2f1b6e4d6e4869b75352660e1f35619b96a2b3efa01648ea428903d"
   end
 
