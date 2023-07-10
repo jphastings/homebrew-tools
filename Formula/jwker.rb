@@ -11,7 +11,7 @@ class Jwker < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "00316d00b7eb63f484add8073243e8cd97bfc156c3ca94b9ff95430de500d77c"
+      sha256 "1c0301dafc8af7ed6c5713e3b384dbbb94fbd7bdbcac09e55205db50434612d7"
 
       def install
         bin.install "jwker"
@@ -19,7 +19,7 @@ class Jwker < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "42f71eb858d549ecd961276fbde8a8995dcb7117b4d413e4a4f6449fc52cea43"
+      sha256 "e1c4c7edaa42cf89ba5fb4e602b982d24ba30dcee5f4c5ebf2505566688c5a3a"
 
       def install
         bin.install "jwker"
@@ -30,7 +30,7 @@ class Jwker < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5c1a8776b99baed968ac9c1800320ed7fb61a24ed48de0e9cc9013d40bbad979"
+      sha256 "f3875c39ffcbf2655082cd0fc06cc3a18eca9601d13031bac06ea47358bfe4b1"
 
       def install
         bin.install "jwker"
@@ -38,7 +38,7 @@ class Jwker < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "82efd4042036ddb54a9694b082161b8f3a215a009db1edfef110d7d52c8da543"
+      sha256 "26d2aa1d78a2049fc82cf7ea2d0f868c2009d651c7037db8ad7cfaeff969c1fa"
 
       def install
         bin.install "jwker"
@@ -47,11 +47,11 @@ class Jwker < Formula
   end
 
   resource("testdata.pem") do
-    url "test_data/x25519.pub.pem"
+    url "https://github.com/jphastings/jwker/raw/main/test_data/x25519.pub.pem"
     sha256 "546a61cc1eb31e336be056bde9ed1ad417f09fde3beb551f24406b043b5ce69a"
   end
   resource("testdata.jwk") do
-    url "test_data/x25519.pub.pem"
+    url "https://github.com/jphastings/jwker/raw/main/test_data/x25519.pub.pem"
     sha256 "f8d83d7dc2f1b6e4d6e4869b75352660e1f35619b96a2b3efa01648ea428903d"
   end
 
