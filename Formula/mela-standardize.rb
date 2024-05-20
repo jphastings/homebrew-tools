@@ -5,21 +5,21 @@
 class MelaStandardize < Formula
   desc "Standardize Mela recipe files."
   homepage "https://github.com/jphastings/mela-recipes/"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.5/mela-standardize_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "870e54dd61d936dad76046e6c363fa98c44a16981c3beca91344eaa02e1ac5bb"
+      url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.6/mela-standardize_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "4806a18fb2068e0b2361d899bae9a0ac0b39fffb0a08aca9be2e27f234d4054d"
 
       def install
         bin.install "mela-standardize"
       end
     end
     on_arm do
-      url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.5/mela-standardize_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8ff7971325f4c47d4be323833857408d50bef6c3733146686edba34aa68cc076"
+      url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.6/mela-standardize_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "173bf04b829e3d480ad799f3081a70f2bdda843e7df6051d6d9b13dbb5783d3a"
 
       def install
         bin.install "mela-standardize"
@@ -30,8 +30,8 @@ class MelaStandardize < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.5/mela-standardize_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "7ab604b22d1bd1bb21f31ef562f94facd630871bd846553cd3f6b00328232ca4"
+        url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.6/mela-standardize_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "90be26dc114cfa0e9f339319ffcb1c0b98580e0019c61f0485ad26e9c94d75c7"
 
         def install
           bin.install "mela-standardize"
@@ -40,8 +40,8 @@ class MelaStandardize < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.5/mela-standardize_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "fd2456c603498ade4a6240d4a6263f790950bba0fe76540ab1f6d2e4d6c235a6"
+        url "https://github.com/jphastings/mela-recipes/releases/download/v0.0.6/mela-standardize_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "ee9e7e1275633f56e27d08d0f12744d52d1622a9e1c0b8fe13480e932b3cd178"
 
         def install
           bin.install "mela-standardize"
