@@ -5,21 +5,21 @@
 class Postcards < Formula
   desc "Tool for creating digital versions of physical postcards"
   homepage "https://dotpostcards.org/cli/postcards"
-  version "0.2.4"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jphastings/dotpostcard/releases/download/0.2.4/dotpostcard_Darwin_x86_64.tar.gz"
-      sha256 "148b6c6d4f4acf12178f7d4a0b655d985576fc5fd2e919283afdf6e62486a13c"
+      url "https://github.com/jphastings/dotpostcard/releases/download/0.3.0/dotpostcard_Darwin_x86_64.tar.gz"
+      sha256 "d3740cf7332334a892fce308861263848833d3f2012fde2f87c8da2b9ae866c5"
 
       def install
         bin.install "postcards"
       end
     end
     on_arm do
-      url "https://github.com/jphastings/dotpostcard/releases/download/0.2.4/dotpostcard_Darwin_arm64.tar.gz"
-      sha256 "68b464bf566eddd15dd82054d8887e89520532b102083e7e7e66752d55089332"
+      url "https://github.com/jphastings/dotpostcard/releases/download/0.3.0/dotpostcard_Darwin_arm64.tar.gz"
+      sha256 "12c620aac34efd05faec9ea68bb7012680893e2af4c06397855c59099be80397"
 
       def install
         bin.install "postcards"
@@ -30,8 +30,8 @@ class Postcards < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jphastings/dotpostcard/releases/download/0.2.4/dotpostcard_Linux_x86_64.tar.gz"
-        sha256 "b8e1a4dccf065915dc77e763d075edb448ea759becfc535a61857d8769e30979"
+        url "https://github.com/jphastings/dotpostcard/releases/download/0.3.0/dotpostcard_Linux_x86_64.tar.gz"
+        sha256 "29d74d6a13ff52e30ae29541a781b0ccf69d65ada97d8005e4c3ec8476c6cbc7"
 
         def install
           bin.install "postcards"
@@ -40,8 +40,8 @@ class Postcards < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jphastings/dotpostcard/releases/download/0.2.4/dotpostcard_Linux_arm64.tar.gz"
-        sha256 "8d3f9cfcd98de82fb7e37d5c3fdfe22af30f6c0a79ec497449f22a4797fde996"
+        url "https://github.com/jphastings/dotpostcard/releases/download/0.3.0/dotpostcard_Linux_arm64.tar.gz"
+        sha256 "353cffb85192c8345822e030dadbaf71496e575fa7a6e8f4167b5b9d3ee13157"
 
         def install
           bin.install "postcards"
