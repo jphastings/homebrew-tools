@@ -11,7 +11,7 @@ class Postcards < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jphastings/dotpostcard/releases/download/0.8.4/dotpostcard_Darwin_x86_64.tar.gz"
-      sha256 "7577406beb8b508c39b5b83fd42ac98ab0449bc1028ac4965ced153f2336c25a"
+      sha256 "08c25903b02593674ed55e7e977248c874d9fe6da8ce5e68aca8baf46be922b2"
 
       def install
         bin.install "postcards"
@@ -20,7 +20,7 @@ class Postcards < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jphastings/dotpostcard/releases/download/0.8.4/dotpostcard_Darwin_arm64.tar.gz"
-      sha256 "b9a4d16c36bfb0790ae3fdc18bc9ea43cb2d7fe0a4a10057f52547577c4dcce7"
+      sha256 "922d59d66c3ed9acda463c89a154326454927b882becfc8827c0c111c65084b6"
 
       def install
         bin.install "postcards"
@@ -33,7 +33,7 @@ class Postcards < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jphastings/dotpostcard/releases/download/0.8.4/dotpostcard_Linux_x86_64.tar.gz"
-        sha256 "e25f939fc6c6c9ce2bc3fb3f76ce84b8ae327ae855826f9f3a2d9fd9311a7fd0"
+        sha256 "17efb1772107747f7e3721864819d9e085f65925d03caf89238ae34231f00aa9"
 
         def install
           bin.install "postcards"
@@ -44,7 +44,7 @@ class Postcards < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jphastings/dotpostcard/releases/download/0.8.4/dotpostcard_Linux_arm64.tar.gz"
-        sha256 "b09fde47412c561db984a284dc278ebca4384b4525a7ab1d3cbb059c29b63cf3"
+        sha256 "a1b46befa0b9a725ee2fdc0671c57dcee94998e70ddcb8dffc1e987719db7e1b"
 
         def install
           bin.install "postcards"
