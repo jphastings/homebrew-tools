@@ -5,21 +5,21 @@
 class Jwker < Formula
   desc "Easily convert between PEM and JWK files."
   homepage "https://github.com/jphastings/jwker/"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a2d94127563fb7ee13ac2e4d738d73ef9a5bdd670207fa4e6bd34e18501621ce"
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.2/jwker_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "1c0ce45bcd9d749aeb4f34e9c0eef879e708d912a64b6d33cdacde4bf73cf34f"
 
       def install
         bin.install "jwker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a008336b19cea175193e3659f7db21d59e7a2b5568a0b781f194f0d03c92375e"
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.2/jwker_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0e62380b177e60bcdaff2253e3faf516ad1f0cb8a91334ed5a5ccedc8f3cd421"
 
       def install
         bin.install "jwker"
@@ -28,18 +28,16 @@ class Jwker < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f37866a81509a5021378035df31a767c60a49a71e91379aef1fed621bc3e024d"
-
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.2/jwker_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f94e8cacbc710c3a9a978604cdf9a67bba758bef2f300284714952d0ecc5e7f4"
       def install
         bin.install "jwker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jphastings/jwker/releases/download/v0.2.1/jwker_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7482cf4c5f3be63c8cca5ec00a720cf0f5bdd0a34f607c558e68ebbebed82e95"
-
+      url "https://github.com/jphastings/jwker/releases/download/v0.2.2/jwker_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "e3cac2ee4a82136d2a13b77ea2f8beb5e4cd90e253638005cbd431d2e2d09bde"
       def install
         bin.install "jwker"
       end
