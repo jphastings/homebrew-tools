@@ -15,12 +15,12 @@ cask "cosy-posts" do
     on_intel do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Darwin_x86_64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "1d9e0416b4c24ef10100642905076132585d4f7e6ab4350c8a600dc4e4df7bd8"
+      sha256 "66436c1716e5937397ab8a634bf5833a4e84a0b6db483faa61d2e156eecc996a"
     end
     on_arm do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Darwin_arm64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "7d765c71cd5437add759b068a0d2e64e7129cbfb421d59a5c9f7ea097c0f1901"
+      sha256 "e9e1e68bfb2448f9668b2de6a9528e9e86105f74566bbf9e0aafd0bdbee8d0f1"
     end
   end
 
@@ -28,12 +28,12 @@ cask "cosy-posts" do
     on_intel do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Linux_x86_64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "79ad9fa67a8a63c345c3b077b3b4b5d5f4d103604a83bcb1a7c1ec67eb98ccd4"
+      sha256 "cc2b888287dd2a9df529f9d0c40b694fe94a1f50a954575c651639cd620e501d"
     end
     on_arm do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Linux_arm64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "2219a22bc889d73daaf6b5ed67d8fa1b1fc69c02a272830588c3864d7b76e80a"
+      sha256 "2e68686fb7333778271f4034f14ee0f3dd3879914fbfce68f802e381859a9bc8"
     end
   end
 
