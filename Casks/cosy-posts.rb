@@ -3,7 +3,7 @@ cask "cosy-posts" do
   name "cosy-posts"
   desc "Create a private online space to share photos, videos, audio and notes with a closed circle of friends."
   homepage "https://github.com/jphastings/cosy-posts"
-  version "0.4.6"
+  version "0.4.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "cosy-posts" do
     on_intel do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Darwin_x86_64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "6801463bc8d252e7c08896aa08fde8589bab02da0ced75402580a7666d3224ff"
+      sha256 "23bb6c9d00c7753418f2c5704ab040b86ca8ead1e0d33e4c5e4df9acc84cfc57"
     end
     on_arm do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Darwin_arm64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "1141eff0257edf441ff48453d45ab3d3c3d7651e8f37fa3b720582fbee444ab2"
+      sha256 "817ca32bd3ad39a08741ac3cae0182a323ee802c03af7fc3e9fc98acbf7c910c"
     end
   end
 
@@ -28,12 +28,12 @@ cask "cosy-posts" do
     on_intel do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Linux_x86_64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "e6f41261e624a9cacbea391a647b08d6119b2abfde7bb7c39fb92c67a11821f0"
+      sha256 "88a942c4c2d906979b2471755dbef49545fc6310d2ef97a3a49334d0852e17c5"
     end
     on_arm do
       url "https://github.com/jphastings/cosy-posts/releases/download/v#{version}/cosy-posts_Linux_arm64.tar.gz",
         verified: "github.com/jphastings/cosy-posts"
-      sha256 "376bac529afe9f365441bdbd7a7e8d54eb25e8213389ebd273985b1dc2808e30"
+      sha256 "2b2ac1894562440491d0a0e394190c702c1c912c227037ea422e62488f6a5967"
     end
   end
 
